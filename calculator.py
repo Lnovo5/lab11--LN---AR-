@@ -18,13 +18,13 @@ def mul(a, b):
 
 def div(a, b):
     try:
-        math.div(b, a)
+        return math.div(b, a)
     except ValueError:
         print("Dividing by zero is illegal!")
     
 def log(a, b):
     try:
-        math.log(b, a)
+        return math.log(b, a)
     except ValueError:
         print("Don't use a logarithm on a number that is 0 or less!")
     
