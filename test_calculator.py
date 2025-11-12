@@ -8,8 +8,8 @@ class TestCalculator(unittest.TestCase):
          self.assertEqual(add(-1, 4), 3)
 
      def test_subtract(self): # 3 assertions
-         self.assertEqual(sub(5, 3), 2)
-         self.assertEqual(sub(0, 4), -4)
+        self.assertEqual(sub(5, 3), 2)
+        self.assertEqual(sub(0, 4), -4)
 
     ######## Partner 1
     #def test_multiply(self): # 3 assertions
@@ -19,10 +19,14 @@ class TestCalculator(unittest.TestCase):
     #     fill in code
     # ##########################
 
-    ######## Partner 2
-    def test_divide_by_zero(self): # 1 assertion
-        with self.assertRaises(ZeroDivisionError):
-            div(0, 5)
+     ######## Partner 2
+     def test_divide_by_zero(self): # 1 assertion
+         error_raised = False
+         try:
+             div(0, 5)
+         except ZeroDivisionError:
+             error_raised = True
+         self.assertTrue(error_raised)
 
      def test_logarithm(self): # 3 assertions
          self.assertAlmostEqual(log(10, 100), 2.0)
