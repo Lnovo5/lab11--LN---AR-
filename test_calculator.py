@@ -24,8 +24,9 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ZeroDivisionError):
             div(0, 5)
 
-    # def test_logarithm(self): # 3 assertions
-    #     fill in code
+     def test_logarithm(self): # 3 assertions
+         self.assertAlmostEqual(log(10, 100), 2.0)
+         self.assertAlmostEqual(log(2, 8), 3.0)
 
     def test_log_invalid_base(self): # 1 assertion
          self.assertAlmostEqual(log(10, 100), 2.0)
