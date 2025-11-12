@@ -17,16 +17,16 @@ def mul(a, b):
     return a * b
 
 def div(a, b):
-    if b == 0:
-        raise ZeroDivisionError
-    else:
-        return b / a
+    try:
+        math.div(b, a)
+    except ValueError:
+        print("Dividing by zero is illegal!")
     
 def log(a, b):
-    if b <= 0:
-        raise ValueError
-    else:
-        return math.log(b, a)
+    try:
+        math.log(b, a)
+    except ValueError:
+        print("Don't use a logarithm on a number that is 0 or less!")
     
 def exp(a, b):
     return math.pow(a, b)
