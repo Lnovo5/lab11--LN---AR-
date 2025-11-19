@@ -15,10 +15,9 @@ import math
 
 
 def square_root(a):
-    try:
-        return math.sqrt(a)
-    except:
-        print("You cannot find the square root of a negative!")
+    if a < 0:
+        raise ValueError("You cannot find the square root of a negative!")
+    return math.sqrt(a)
 
 def hypotenuse(a, b):
     return math.hypot(a, b)
