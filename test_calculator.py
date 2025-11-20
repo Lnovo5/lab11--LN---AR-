@@ -19,9 +19,9 @@ class TestCalculator(unittest.TestCase):
 
 
      def test_divide(self): # 3 assertions
-        self.assertEqual(div(20, 4), 5)
+        self.assertEqual(div(4, 20), 5)
         self.assertEqual(div(5, -5), -1)
-        self.assertNotEqual((7, 3), 6)
+        self.assertNotEqual((3, 7), 6)
 
      ######## Partner 2
      def test_divide_by_zero(self): # 1 assertion
@@ -51,9 +51,9 @@ class TestCalculator(unittest.TestCase):
     #     fill in code
 
      def test_hypotenuse(self): # 3 assertions
-        self.assertEqual((3, 4), 5)
-        self.assertEqual((5, 7), 12)
-        self.assertNotEqual((1, 8), 3)
+        self.assertEqual(hypotenuse(3, 4), 5)
+        self.assertEqual(hypotenuse(5, 7), 12)
+        self.assertNotEqual(hypotenuse(1, 8), 3)
 
 
      def test_sqrt(self): # 3 assertions
@@ -64,9 +64,9 @@ class TestCalculator(unittest.TestCase):
               square_root(-2)
     #     # Test basic function
     #     fill in code
-          self.assertEqual(4, 2)
-          self.assertEqual(64, 8)
-          self.assertNotEqual(72, 9)
+          self.assertEqual(square_root(4), 2)
+          self.assertEqual(square_root(64), 8)
+          self.assertNotEqual(square_root(72), 9)
 
 # Do not touch this
 if __name__ == "__main__":
