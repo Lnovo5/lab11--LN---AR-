@@ -1,3 +1,5 @@
+# https://github.com/Lnovo5/lab11--LN---AR-/tree/main
+
 import math
 
 """
@@ -7,7 +9,6 @@ calculator.py
 One function per operation, in order.
 """
 # First example
-# https://github.com/Lnovo5/lab11--LN---AR-/tree/main
 # Partner 1: Lucia Novo
 # Partner 2: Afnan Rehan
 
@@ -25,7 +26,7 @@ def add(a, b):
     return a + b
 
 
-def sub(a, b):
+def subtract(a, b):
     return a - b
 
 
@@ -39,7 +40,7 @@ def div(a, b):
     return b / a
 
 
-def log(a, b):
+def logarithm(a, b):
     if a <= 0 or a == 1 or b <= 0:
         raise ValueError("Invalid input for logarithm.")
     return math.log(b, a)
