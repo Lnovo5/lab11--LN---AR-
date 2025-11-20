@@ -1,6 +1,10 @@
 import unittest
 from calculator import *
 
+# https://github.com/Lnovo5/lab11--LN---AR-/tree/main
+# Partner 1: Lucia Novo
+# Partner 2: Afnan Rehan
+
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
      def test_add(self): # 3 assertions
