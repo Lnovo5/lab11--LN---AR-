@@ -7,7 +7,7 @@ calculator.py
 One function per operation, in order.
 """
 # First example
-# https://github.com/Lnovo5/lab11--LN---AR-.git
+# https://github.com/Lnovo5/lab11--LN---AR-/tree/main
 # Partner 1: Lucia Novo
 # Partner 2: Afnan Rehan
 
