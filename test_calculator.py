@@ -56,7 +56,7 @@ class TestCalculator(unittest.TestCase):
 
      def test_hypotenuse(self): # 3 assertions
         self.assertEqual(hypotenuse(3, 4), 5)
-        self.assertEqual(hypotenuse(5, 7), 12)
+        self.assertNotEqual(hypotenuse(5, 7), 12)
         self.assertNotEqual(hypotenuse(1, 8), 3)
 
 
