@@ -7,11 +7,10 @@ calculator.py
 One function per operation, in order.
 """
 # First example
-# https://github.com/yourusername/lab11-XX-YY
-# Partner 1: [Partner 1 Name]
-# Partner 2: [Your Name]
+# https://github.com/Lnovo5/lab11--LN---AR-.git
+# Partner 1: Lucia Novo
+# Partner 2: Afnan Rehan
 
-import math
 
 
 def square_root(a):
